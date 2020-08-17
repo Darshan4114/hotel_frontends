@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marina Beach Hotel</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./static/css/main.css" />
+  </head>
+  <body>
+    <div
+      class="d-flex flex-column align-items-center justify-content-center check_availability"
+    >
+    
+      <div class="headings m-4">
+        <h1>Marina Beach</h1>
+        <h1>Hotel</h1>
+      </div>
+
+      <div id="search-bar" style="color: #fff;">
+
+          <form
+          class="search-form m-0 container"
+          action=""
+        >
+        
+        <div class="date-row row">
+          <div
+            class="form-group d-flex justify-content-space-between col-sm-6 "
+          >
+            <label for="from">From:</label>
+            <input type="datetime-local" id="from" />
+          </div>
+          <div class="form-group d-flex justify-content-space-between  col-sm-6 ">
+            <label for="to">To: </label>
+            <input type="datetime-local" id="to" />
+          </div>
+
+        </div>
+          
+        <div class="room-row row">
+          <div class="form-group pr-1 d-flex justify-content-space-between col-12 col-sm-6">
+            <label for="from">Room: </label>
+            <div class="dropdown">
+              <a
+                class="btn btn-sm btn-secondary dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Select Room
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" onclick="setdd('Deluxe')" href="#"
+                  >Deluxe</a
+                >
+                <a class="dropdown-item" onclick="setdd('King')" href="#"
+                  >King</a
+                >
+                <a class="dropdown-item" onclick="setdd('Queen')" href="#"
+                  >Queen</a
+                >
+                <a class="dropdown-item" onclick="setdd('AC')" href="#">AC</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+          
+          <div class="form-group row mw-50 m-2">
+            <button class="btn btn-primary col-12  mw-50 " type="submit">
+              Find Room
+            </button>
+          </div>
+          </form>
+
+        
+      </div>
+          
+        <!-- <img id="search-bar-img" src="./static/svg/search_bar.svg" alt="" /> -->
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function setdd(dditem) {
+        document.getElementById("dropdownMenuLink").textContent = dditem;
+      }
+      // dditems = document.getElementsByClassName("dropdown-item");
+    </script>
+  </body>
+</html>
