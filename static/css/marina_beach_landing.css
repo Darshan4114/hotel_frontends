@@ -1,9 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 html {
   height: 100vh;
   width: 100vw;
+}
+
+.nav {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  height: 50px;
+  /* margin: 5rem; */
+  padding: 1.5rem;
+  background-color: (255, 255, 255, 0.1) !important;
+}
+.nav ul.navlist {
+  position: absolute;
+  right: 1.5rem;
+  color: #fff;
+}
+.nav ul.navlist a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+#logo {
+  font-family: "Great Vibes", cursive;
+  flex: 0 1 200px;
+  color: #000;
+  z-index: 1;
 }
 
 .headings h1 {
@@ -13,6 +41,9 @@ html {
   color: #f9f9f9;
   flex: 0 1 100px;
   align-self: center;
+}
+h1:first-of-type {
+  margin-top: 5rem;
 }
 
 #search-bar {
