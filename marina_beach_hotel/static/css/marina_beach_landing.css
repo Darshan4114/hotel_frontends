@@ -38,9 +38,9 @@ html {
   justify-content: space-between;
   margin: 0.2rem 0.5rem;
 } */
-
-#dropdownMenuLink {
-  min-width: 130px;
+.form-group a#dropdownMenuLink {
+  min-width: 215px;
+  flex: 7;
   margin: 0 0.1rem;
 }
 
